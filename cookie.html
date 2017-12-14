@@ -2,10 +2,8 @@
     <script>
         if (window.parent) {
             if (/thirdparty=yes/.test(document.cookie)) {
-                alert('3PCsupported');
                 window.parent.postMessage('MM:3PCsupported', '*');
             } else {
-                alert('3PCunsupported');
                 window.parent.postMessage('MM:3PCunsupported', '*');
             }
         }
